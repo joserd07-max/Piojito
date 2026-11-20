@@ -1,0 +1,66 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" width="440" height="380" viewBox="0 0 440 380" fill="none">
+  <defs>
+    <radialGradient id="cupShade" cx="43%" cy="21%" r="83%">
+      <stop stop-color="#efd0ff"/><stop offset=".36" stop-color="#d29bec"/><stop offset=".76" stop-color="#a864d0"/><stop offset="1" stop-color="#7d36ad"/>
+    </radialGradient>
+    <radialGradient id="petalLight" cx="37%" cy="25%" r="78%">
+      <stop stop-color="#fff0ff"/><stop offset=".31" stop-color="#ebc7fb"/><stop offset=".7" stop-color="#c084e2"/><stop offset="1" stop-color="#8d4dbb"/>
+    </radialGradient>
+    <linearGradient id="petalSide" x1="0" y1="0" x2="1" y2=".9">
+      <stop stop-color="#e8baf8"/><stop offset=".5" stop-color="#bd7cde"/><stop offset="1" stop-color="#8746b5"/>
+    </linearGradient>
+    <linearGradient id="stem" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#1f7848"/><stop offset=".46" stop-color="#43b86b"/><stop offset="1" stop-color="#17663d"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#58df86"/><stop offset=".52" stop-color="#35bd69"/><stop offset="1" stop-color="#16854b"/>
+    </linearGradient>
+    <filter id="bloomShadow" x="-30%" y="-25%" width="160%" height="165%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="4" result="blur"/>
+      <feOffset dy="5" result="offset"/>
+      <feFlood flood-color="#411462" flood-opacity=".42" result="shade"/>
+      <feComposite in="shade" in2="offset" operator="in" result="shadow"/>
+      <feMerge><feMergeNode in="shadow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <symbol id="volumetricTulip" viewBox="0 0 140 120">
+      <!-- A broad rounded cup creates the familiar closed tulip silhouette. -->
+      <path d="M19 91C8 78 7 59 15 43C22 28 36 29 50 51C44 31 52 13 68 10C84 7 97 24 94 48C105 31 119 31 126 47C135 67 126 88 111 98C96 108 43 109 19 91Z" fill="url(#cupShade)" filter="url(#bloomShadow)"/>
+      <!-- Rear petals give the flower a softly rounded shoulder on both sides. -->
+      <path d="M70 108C51 100 28 88 17 68C9 53 13 38 22 36C35 32 51 56 64 82Z" fill="url(#petalSide)"/>
+      <path d="M70 108C89 100 112 88 123 68C131 53 127 38 118 36C105 32 89 56 76 82Z" fill="url(#petalSide)"/>
+      <!-- Two inner petals overlap the sides and narrow into the flower base. -->
+      <path d="M68 107C53 94 41 73 41 52C41 34 50 24 61 30C73 37 78 67 75 99Z" fill="url(#petalLight)"/>
+      <path d="M72 107C87 94 99 73 99 52C99 34 90 24 79 30C67 37 62 67 65 99Z" fill="url(#petalLight)"/>
+      <!-- The broad central petal is highest and catches the soft key light. -->
+      <path d="M67 106C53 91 47 69 49 46C51 24 61 11 75 12C94 15 101 39 96 64C92 84 81 101 73 108Z" fill="url(#petalLight)"/>
+      <!-- Gentle recessed folds and broad highlights create a sculpted 3D finish. -->
+      <path d="M24 43C39 55 49 72 57 91M116 43C101 55 91 72 83 91" stroke="#74379d" stroke-opacity=".22" stroke-width="2.4" stroke-linecap="round"/>
+      <path d="M34 40C45 53 52 66 57 79M89 34C94 48 94 62 90 76" stroke="#fff0ff" stroke-opacity=".54" stroke-width="3" stroke-linecap="round"/>
+      <path d="M69 25C66 48 68 72 71 93" stroke="#fff4ff" stroke-opacity=".36" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M57 104Q70 111 83 104" stroke="#7b3ea4" stroke-opacity=".2" stroke-width="2.5" stroke-linecap="round"/>
+    </symbol>bol>
+  </defs>
+
+  <!-- Three separate, slender stems. -->
+  <path d="M137 136C134 193 134 267 132 344" stroke="#258c51" stroke-width="6" stroke-linecap="round"/>
+  <path d="M220 112C220 190 220 269 220 348" stroke="#258c51" stroke-width="6" stroke-linecap="round"/>
+  <path d="M303 136C306 193 306 267 308 344" stroke="#258c51" stroke-width="6" stroke-linecap="round"/>
+  <path d="M136 152C135 213 135 276 133 332M219 127V337M304 152C305 213 305 276 307 332" stroke="#a5f4b7" stroke-opacity=".4" stroke-width="1.4" stroke-linecap="round"/>
+
+  <!-- Five long, tapered leaves fan out around the lower stems. -->
+  <path d="M136 350C123 316 104 282 86 244C112 264 133 293 143 332L140 351Z" fill="url(#leaf)"/>
+  <path d="M139 352C143 318 156 286 178 259C178 295 165 326 143 357Z" fill="url(#leaf)"/>
+  <path d="M218 356C205 322 191 289 178 253C202 277 219 309 224 350Z" fill="url(#leaf)"/>
+  <path d="M222 356C232 321 249 288 273 262C270 298 251 330 226 359Z" fill="url(#leaf)"/>
+  <path d="M305 350C317 316 336 282 354 244C328 264 307 293 297 332L300 351Z" fill="url(#leaf)"/>
+  <g stroke="#bcffd0" stroke-opacity=".56" stroke-width="1.8" stroke-linecap="round">
+    <path d="M139 348C126 311 108 278 91 251"/><path d="M141 350C151 316 164 287 175 266"/>
+    <path d="M220 352C207 315 192 284 182 260"/><path d="M223 352C239 316 255 289 270 270"/><path d="M302 348C315 311 333 278 350 251"/>
+  </g>
+
+  <!-- The center sits slightly higher; the two rounded blooms overlap it softly. -->
+  <use href="#volumetricTulip" x="152" y="6" width="136" height="116"/>
+  <use href="#volumetricTulip" x="75" y="40" width="124" height="106"/>
+  <use href="#volumetricTulip" x="241" y="40" width="124" height="106"/>
+</svg>
+

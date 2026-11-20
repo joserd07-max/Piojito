@@ -1,0 +1,28 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200" fill="none">
+  <defs>
+    <linearGradient id="stem" x1="44" y1="82" x2="55" y2="195" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#54734c"/><stop offset="1" stop-color="#243d2d"/>
+    </linearGradient>
+    <linearGradient id="petal-center" x1="34" y1="12" x2="72" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f0cafa"/><stop offset=".45" stop-color="#c58cdd"/><stop offset="1" stop-color="#774f96"/>
+    </linearGradient>
+    <linearGradient id="petal-side" x1="13" y1="40" x2="39" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#e8bdf8"/><stop offset="1" stop-color="#9868b4"/>
+    </linearGradient>
+    <linearGradient id="petal-right" x1="62" y1="42" x2="94" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#dfaff2"/><stop offset="1" stop-color="#80559e"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="18" y1="132" x2="87" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#66875a"/><stop offset="1" stop-color="#294531"/>
+    </linearGradient>
+  </defs>
+  <path d="M50 88C48 120 54 157 52 194" stroke="url(#stem)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M50 151C35 137 21 130 13 134C17 149 32 160 51 161C54 158 53 154 50 151Z" fill="url(#leaf)"/>
+  <path d="M52 173C64 154 79 148 88 153C84 168 70 178 52 181C50 179 50 176 52 173Z" fill="url(#leaf)"/>
+  <path d="M18 79C11 67 10 54 15 46C21 36 30 41 37 58C34 37 40 16 49 13C52 12 54 12 57 14C67 23 69 43 64 61C72 44 81 38 88 45C96 53 92 69 83 81C76 92 64 98 50 98C37 98 25 91 18 79Z" fill="#83569f" stroke="#edc7fa" stroke-width="2.2" stroke-linejoin="round"/>
+  <path d="M18 78C13 68 12 56 16 48C20 40 27 43 34 59C36 70 40 81 46 91C34 91 24 87 18 78Z" fill="url(#petal-side)"/>
+  <path d="M37 59C34 38 40 17 49 14C52 13 54 13 57 15C66 24 68 44 63 63C61 76 57 87 51 96C44 87 39 74 37 59Z" fill="url(#petal-center)"/>
+  <path d="M64 61C72 44 81 39 87 46C94 54 90 69 82 80C76 87 67 91 57 93C61 82 64 71 64 61Z" fill="url(#petal-right)"/>
+  <path d="M49 89C49 68 49 42 51 23" stroke="#f8e5ff" stroke-opacity=".75" stroke-width="2" stroke-linecap="round"/>
+  <path d="M25 50C28 58 30 65 31 72M78 52C75 59 72 66 69 73" stroke="#f5dcff" stroke-opacity=".55" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
